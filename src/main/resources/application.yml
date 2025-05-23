@@ -32,3 +32,10 @@ spring:
             - Path=/movement-service/**
           filters:
             - StripPrefix=1
+
+        - id: report-service
+          uri: http://localhost:8084
+          predicates:
+            - Path=/report-service/**
+          filters:
+            - StripPrefix=1
